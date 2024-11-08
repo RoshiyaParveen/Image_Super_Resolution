@@ -1,3 +1,4 @@
 ECHO is on.
 "This is a demo file" 
 Adding a new line
+Adding second line
