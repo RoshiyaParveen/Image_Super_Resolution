@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Super-Resolution Result</title>
+</head>
+<body>
+    <h1>Super-Resolution Result</h1>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul>
+        {% for message in messages %}
+          <li>{{ message }}</li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+
+    <h2>Input Image</h2>
+    <img src="{{ input_image }}" alt="Input Image">
+
+    <h2>Output Image</h2>
+    <img src="{{ output_image }}" alt="Output Image">
+
+    <br>
+    <a href="{{ url_for('index') }}">Upload Another Image</a>
+</body>
+</html>
